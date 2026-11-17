@@ -1,0 +1,18 @@
+{
+  "$schema": "state-manifest/v1",
+  "status": "active",
+  "authoritative": true,
+  "subgraph": "beans",
+  "keyedBy": "tip",
+  "source": {
+    "ref": "main",
+    "sha": "ed671c0211dfd100bca9cd67dccb5ba167aa6fe3"
+  },
+  "seededAt": "2026-11-17T17:46:49Z",
+  "graphs": [
+    {
+      "path": "beans"
+    }
+  ],
+  "note": "The beans subgraph of this instance, seeded empty on the owner's decision (2026-11-17, card answered ~17:40Z: 'Create them'): dth-pc.json had declared it on this branch, which did not exist."
+}
