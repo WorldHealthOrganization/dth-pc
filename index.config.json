@@ -7,14 +7,58 @@
         "local": {
           "at": "."
         }
-      }
+      },
+      "contentType": "document",
+      "adapter": "document",
+      "adapterModule": "./folio-assistant-core/adapters/document/index.ts",
+      "dependencies": {
+        "folioAssistant": [
+          {
+            "name": "folio-assistant-core",
+            "path": "folio-assistant-core"
+          },
+          {
+            "name": "smart-base",
+            "path": "smart-base"
+          }
+        ]
+      },
+      "feedbackDir": ".folio-feedback",
+      "skills": ".claude/skills/local",
+      "viewer": {
+        "dir": "cat-harness-tools/viewer",
+        "port": 8080
+      },
+      "readme": {
+        "linkStyle": "blob",
+        "publishRef": "gh-pages"
+      },
+      "site": {
+        "build": {
+          "sourceSteps": [
+            "site:document",
+            "site:archimate"
+          ],
+          "siteSteps": [
+            "site:node-kinds",
+            "site:export"
+          ],
+          "pre": [
+            "check:page-furniture"
+          ],
+          "keep": [
+            "ns"
+          ]
+        }
+      },
+      "_site_comment": "`site.build.pre` is empty until the block KG nodes (`bun run kg:blocks`) are generated and committed; then add check:kg-blocks, as dth-hrh has. `site.build.keep`: `ns`, the JSON-LD context the block KG nodes name."
     },
     {
       "name": "who-iris",
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
+          "ref": "bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -38,9 +82,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "on": "2026-11-18",
+              "ref": "bc7e22c3f6ee56bcf59b4f9a24edfa34df8ab707",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PRs pick up cat-harness-tools#2340 (main-only site-publish caller) and dpi-h-ra's merged avatar (smart-ra#263), as lock:freshness requires"
             }
           }
         }
@@ -51,7 +95,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "311389598499785d2add24e0db54caed770ffec1",
+          "ref": "1faf8ae72ef7c4da39a2d4d6267678c51f18c02c",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -83,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "311389598499785d2add24e0db54caed770ffec1",
-              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
+              "on": "2026-11-18",
+              "ref": "1faf8ae72ef7c4da39a2d4d6267678c51f18c02c",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PRs pick up cat-harness-tools#2340 (main-only site-publish caller) and dpi-h-ra's merged avatar (smart-ra#263), as lock:freshness requires"
             }
           }
         }
@@ -96,7 +140,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "b36c50cdb9baeb5f2d33bfed4ee320c6845f29e7",
+          "ref": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -105,9 +149,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "b36c50cdb9baeb5f2d33bfed4ee320c6845f29e7",
-              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
+              "on": "2026-11-18",
+              "ref": "d34ae7692a304983a495b20b62f37b8b98d3cb85",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PR picks up cat-harness-tools#2340 (canonical site-publish caller, main only), as lock:freshness requires"
             }
           }
         }
@@ -118,7 +162,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "08a4c3ea648a5731135850bf9844638985791267",
+          "ref": "5f2558de7820ee6812efc4bf220a1ce6602e8b7e",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -133,9 +177,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "08a4c3ea648a5731135850bf9844638985791267",
-              "evidence": "litlfred 2026-11-17 ~12:20Z in session session_01EucfRnjwjC8CPYgVnsFuHS: 'merge + repin window + 6hrs'; window to ~18:20Z"
+              "on": "2026-11-18",
+              "ref": "5f2558de7820ee6812efc4bf220a1ce6602e8b7e",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PRs pick up cat-harness-tools#2340 (main-only site-publish caller) and dpi-h-ra's merged avatar (smart-ra#263), as lock:freshness requires"
             }
           }
         }
@@ -146,7 +190,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "99f173e2c2fe4aeaab6f0560339a0e9688b27fb1",
+          "ref": "db52366f1f8b96c702de1c064c472e874b927337",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -161,9 +205,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "99f173e2c2fe4aeaab6f0560339a0e9688b27fb1",
-              "evidence": "litlfred 2026-11-17 ~07:05Z in session session_01EucfRnnJcbhJjqiweyLnPS: 'repin dth-pc to the tools fix when it merges' (cat-harness-tools#2386, tip 982bddce); 6-hour window from 07:01Z"
+              "on": "2026-11-18",
+              "ref": "db52366f1f8b96c702de1c064c472e874b927337",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PRs pick up cat-harness-tools#2340 (main-only site-publish caller) and dpi-h-ra's merged avatar (smart-ra#263), as lock:freshness requires"
             }
           }
         }
@@ -174,7 +218,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "17a9da7fc47c6b6f43853891c828ac8f69d62929",
+          "ref": "db55d2da5d4cc5947a5c03c9638d18ac3a8546f6",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -186,9 +230,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "17a9da7fc47c6b6f43853891c828ac8f69d62929",
-              "evidence": "litlfred 2026-11-17 ~12:20Z in session session_01EucfRnjwjC8CPYgVnsFuHS: 'merge + repin window + 6hrs'; window to ~18:20Z"
+              "on": "2026-11-18",
+              "ref": "db55d2da5d4cc5947a5c03c9638d18ac3a8546f6",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PR picks up cat-harness-tools#2340 (canonical site-publish caller, main only), as lock:freshness requires"
             }
           }
         }
@@ -199,7 +243,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap",
-          "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
+          "ref": "417192bef3ca2b9d6f3481b41c39f1f747cae57f",
           "overrides": {
             "bootstrap": {
               "whole": true
@@ -208,9 +252,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "on": "2026-11-17",
+              "ref": "417192bef3ca2b9d6f3481b41c39f1f747cae57f",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
             }
           }
         }
@@ -221,7 +265,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/bootstrap-tools",
-          "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
+          "ref": "60e5ffc23b88137c0d9eaef00601da89237df094",
           "overrides": {
             "bootstrap-tools": {
               "whole": true
@@ -233,9 +277,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "on": "2026-11-17",
+              "ref": "60e5ffc23b88137c0d9eaef00601da89237df094",
+              "evidence": "litlfred 2026-11-17 ~18:30Z in session session_01EucfRqYSWYLZDQCayeryd8: 'Do the repinning and then update'; re-pin every layer to its current main so the avatar PR picks up the merged gate fixes (cat-harness-tools#2421, #2415, #2419), as lock:freshness requires"
             }
           }
         }
@@ -246,7 +290,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-ra",
-          "ref": "4ff3621433dae8e6a44f303c043845f52d3f7fe8",
+          "ref": "440611f945761e9ce9c981d6b1ea32c49dd7745d",
           "overrides": {
             "dpi-h-ra": {
               "directories": [
@@ -282,9 +326,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-16",
-              "ref": "4ff3621433dae8e6a44f303c043845f52d3f7fe8",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+              "on": "2026-11-18",
+              "ref": "440611f945761e9ce9c981d6b1ea32c49dd7745d",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PRs pick up cat-harness-tools#2340 (main-only site-publish caller) and dpi-h-ra's merged avatar (smart-ra#263), as lock:freshness requires"
             }
           }
         }
@@ -295,12 +339,13 @@
       "source": {
         "remote": {
           "repository": "litlfred/dth-sc",
-          "ref": "6005a2704077fe52322dff8eb5a66d6f461833b3",
+          "ref": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12",
           "overrides": {
             "dth-sc": {
               "directories": [
                 "glossary",
-                "archimate"
+                "archimate",
+                "dth-sc-docs"
               ]
             },
             "dpi-h-ra": {
@@ -334,9 +379,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-17",
-              "ref": "6005a2704077fe52322dff8eb5a66d6f461833b3",
-              "evidence": "litlfred 2026-11-17 ~12:20Z in session session_01EucfRnjwjC8CPYgVnsFuHS: 'merge + repin window + 6hrs'; window to ~18:20Z"
+              "on": "2026-11-18",
+              "ref": "6aaf7e392554f182f5ecbb59eb6aadedcbc12b12",
+              "evidence": "litlfred 2026-11-18 in session session_01EucfRqYSWYLZDQCayeryd8: 'send PRs to merge manager when green and ready'; re-pin every layer to its current main so the avatar PR picks up cat-harness-tools#2340 (canonical site-publish caller, main only), as lock:freshness requires"
             }
           }
         }
