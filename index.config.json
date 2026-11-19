@@ -95,7 +95,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "63daa5276909996824d0180082265817bb9e7e58",
+          "ref": "328e07312e44958d4d749c99dcee8f8209e7e55a",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -127,9 +127,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "63daa5276909996824d0180082265817bb9e7e58",
-              "evidence": "litlfred, 2026-11-18, in session session_01EucfRmuCKE2PkV3uVekth7 (answer card on dth-pc#36 lock:freshness): '1. Re-pin all (Recommended)' — re-pin smart-base, folio-assistant-core, cat-harness, cat-harness-tools and dpi-h-ra to current main with consent, so the IRI change set (dth-sc to the WHO site) can pass the full tier."
+              "on": "2026-11-19",
+              "ref": "328e07312e44958d4d749c99dcee8f8209e7e55a",
+              "evidence": "litlfred, 2026-11-19 ~12:40Z, AskUserQuestion card in session session_01EucfRpSuM39bquj5HaQz4b (re-pin session, child of merge manager session_01EucfRnjwjC8CPYgVnsFuHS): 'May I re-pin litlfred/dth-pc's smart-base (328e0731), folio-assistant-core (80138a08), cat-harness (44f3c050) and cat-harness-tools (52646593) to current main, recording the consent in your name?' — answer: 'Yes, re-pin (Recommended)'; cat-harness-tools#2469 unblocks the WHO dth-pc#3 sync"
             }
           }
         }
@@ -162,7 +162,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "3e8d58d55997bce744c2dce8090ef3d22bfac31d",
+          "ref": "80138a086f866a7093d0a1a8600a85ceea15b5bb",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -177,9 +177,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "3e8d58d55997bce744c2dce8090ef3d22bfac31d",
-              "evidence": "litlfred, 2026-11-18, in session session_01EucfRmuCKE2PkV3uVekth7 (answer card on dth-pc#36 lock:freshness): '1. Re-pin all (Recommended)' — re-pin smart-base, folio-assistant-core, cat-harness, cat-harness-tools and dpi-h-ra to current main with consent, so the IRI change set (dth-sc to the WHO site) can pass the full tier."
+              "on": "2026-11-19",
+              "ref": "80138a086f866a7093d0a1a8600a85ceea15b5bb",
+              "evidence": "litlfred, 2026-11-19 ~12:40Z, AskUserQuestion card in session session_01EucfRpSuM39bquj5HaQz4b (re-pin session, child of merge manager session_01EucfRnjwjC8CPYgVnsFuHS): 'May I re-pin litlfred/dth-pc's smart-base (328e0731), folio-assistant-core (80138a08), cat-harness (44f3c050) and cat-harness-tools (52646593) to current main, recording the consent in your name?' — answer: 'Yes, re-pin (Recommended)'; cat-harness-tools#2469 unblocks the WHO dth-pc#3 sync"
             }
           }
         }
@@ -190,7 +190,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "dc97a6bc1aa3643e9dbf8213574225decb7e0e73",
+          "ref": "44f3c050ce5565cab593436a2450004e6dc7a4bb",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -205,9 +205,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "dc97a6bc1aa3643e9dbf8213574225decb7e0e73",
-              "evidence": "litlfred, 2026-11-18, in session session_01EucfRmuCKE2PkV3uVekth7 (answer card on dth-pc#36 lock:freshness): '1. Re-pin all (Recommended)' — re-pin smart-base, folio-assistant-core, cat-harness, cat-harness-tools and dpi-h-ra to current main with consent, so the IRI change set (dth-sc to the WHO site) can pass the full tier."
+              "on": "2026-11-19",
+              "ref": "44f3c050ce5565cab593436a2450004e6dc7a4bb",
+              "evidence": "litlfred, 2026-11-19 ~12:40Z, AskUserQuestion card in session session_01EucfRpSuM39bquj5HaQz4b (re-pin session, child of merge manager session_01EucfRnjwjC8CPYgVnsFuHS): 'May I re-pin litlfred/dth-pc's smart-base (328e0731), folio-assistant-core (80138a08), cat-harness (44f3c050) and cat-harness-tools (52646593) to current main, recording the consent in your name?' — answer: 'Yes, re-pin (Recommended)'; cat-harness-tools#2469 unblocks the WHO dth-pc#3 sync"
             }
           }
         }
@@ -218,7 +218,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "b7ffc049889d6088906ba2b893113d9ad17ef83d",
+          "ref": "e5b7b181b65f3073461788d7f270c23552177763",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -230,9 +230,9 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-18",
-              "ref": "b7ffc049889d6088906ba2b893113d9ad17ef83d",
-              "evidence": "litlfred, 2026-11-18, in session session_01EucfRmuCKE2PkV3uVekth7 (answer card on dth-pc#36 lock:freshness): '1. Re-pin all (Recommended)' — re-pin smart-base, folio-assistant-core, cat-harness, cat-harness-tools and dpi-h-ra to current main with consent, so the IRI change set (dth-sc to the WHO site) can pass the full tier."
+              "on": "2026-11-19",
+              "ref": "e5b7b181b65f3073461788d7f270c23552177763",
+              "evidence": "litlfred, 2026-11-19 ~12:58Z, AskUserQuestion card in session session_01EucfRpSuM39bquj5HaQz4b: 'cat-harness-tools main moved from 52646593 to e5b7b181 during the re-pin, so lock:freshness fails. May I re-pin cat-harness-tools to e5b7b181 (consent in your name) and push the layers-cache branch?' — answer: 'Yes, e5b7b181 (Recommended)'"
             }
           }
         }
