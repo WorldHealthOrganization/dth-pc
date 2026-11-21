@@ -35,9 +35,9 @@
       },
       "site": {
         "build": {
+          "extends": "document-folio",
           "sourceSteps": [
-            "site:document",
-            "site:archimate"
+            "site:archimate-dpi-h-ra"
           ],
           "siteSteps": [
             "site:node-kinds",
